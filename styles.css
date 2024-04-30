@@ -1,0 +1,96 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body { 
+    background: #000;
+}
+
+.board {
+    display: grid; 
+    width: 500px;
+    height: 500px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-areas: 
+      ". . . . . . . ."
+      ". . . . . . . ."
+      ". . . . . . . ."
+      ". . . . . . . ."
+      ". . . . . . . ."
+      ". . . . . . . ."
+      ". . . . . . . ."; 
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.square {
+    width: 62.5px;
+    height: 62.5px;
+}
+
+.white {
+    background: rgb(230, 255, 241);
+}
+
+.black {
+    background: #5b875a;
+}
+
+.piece {
+    width: 100%;
+    height: 100%;
+}
+
+#chessForm {
+    width: 500px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#chessForm .txt {
+    width: 75%;
+    height: 75%;
+    border: 1px solid #333;
+    background: #111;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#chessForm .btn {
+    width: 20%;
+    height: 75%;
+    border-bottom: 3px solid #87d976;
+    background: #51a041;
+    color: #fff;
+    border-radius: 5px;
+}
+.copy {
+    width: 500px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    color: #fff;
+    margin-top: 10px
+}
+.tag {
+    width: 60px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #222;
+    border-radius: 5px;
+    border: 2px solid #333;
+}
+
+#FEN {
+    margin-left: 20px;
+}
